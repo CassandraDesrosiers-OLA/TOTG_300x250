@@ -1,0 +1,246 @@
+html, body {
+	margin:0;
+	padding:0;
+}
+#container {
+	position:absolute;
+	top:0;
+	left:0px;
+	width:300px;
+	height:250px;
+	margin:auto;
+	background-color:#ffffff;
+	overflow:hidden;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+		 box-sizing: border-box;
+	border:1px solid #999999;
+}
+
+.frame1 {
+	width: 300px;
+	height: 250px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+.border_top {
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 7px;
+	background-color: #f96302;
+	position: absolute;
+	z-index: 1500;
+}
+
+.flood {
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 0px;
+	background-color: #f96302;
+	position: absolute;
+	z-index: 1100;
+	overflow: hidden;
+}
+
+.flood_headline {
+	position:absolute;
+	top:0;
+	left:0;
+	width:204px;
+	height:139px;
+	background: transparent url(flood_headline.png) no-repeat top left;
+	opacity: 1;
+	z-index: 1150;
+}
+
+.THD_logo {
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:64px;
+	height:64px;
+	background: transparent url(THD_logo.png) no-repeat top left;
+	z-index: 1500;
+}
+
+.TOTG_logo {
+	position:absolute;
+	top:44px;
+	left:68px;
+	width:169px;
+	height:166px;
+	background: transparent url(TOTG_logo.png) no-repeat top left;
+	z-index: 1000;
+}
+
+@keyframes play{
+				from {background-position: 0; }
+				to {background-position: -7500px;}
+			}
+
+			@-webkit-keyframes play{
+				from {background-position: 0; }
+				to {background-position: -7500px;}
+			}
+
+			@-moz-keyframes play{
+				from {background-position: 0; }
+				to {background-position: -7500px;}
+			}
+
+.flame_front {
+	position:absolute;
+	top:0;
+	left:0px;
+	width:300px;
+	height:250px;
+	margin:auto;
+	/*background: transparent url(coals.png) no-repeat top left;*/
+/*	background-color: #fa5700;
+	opacity: 0.2;*/
+	z-index: 900;
+
+
+	background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgba(0,0,0,0)),
+        color-stop(1, rgba(255,36,0,.35))
+    );
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(255,36,0,.4) 100%);
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(255,36,0,.4) 100%);
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(255,36,0,.4) 100%);
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(255,36,0,.4) 100%);
+    background-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(255,36,0,.4) 100%);
+    /*height:30px;*/
+}
+
+.flame_sprite {
+	position:absolute;
+	top:0;
+	left:0px;
+	width:300px;
+	height:250px;
+	margin:auto;
+	background: transparent url(sprite3.jpg) no-repeat top left;
+	z-index: 700;
+	-webkit-animation: play 2s steps(25) infinite;
+				animation: play 2s steps(25) infinite; 
+}
+
+
+/* SLIDER */ 
+
+
+.tagline {
+	width:141px;
+	height:71px;
+	background: transparent url(tagline.png) no-repeat top left;
+	z-index: 500;
+	position: absolute;
+	bottom: 1px;
+	right: 0;
+}
+
+
+#sliderContainer {
+	position: absolute;
+	width:300px;
+	height:250px;
+	top:0px;
+	left:0px;
+	z-index:999;
+	opacity:1;
+	background-color: #FFFFFF;
+	z-index: 700;
+}
+#slider {
+	position: absolute;
+	top:0px;
+	left:0px;
+	overflow:hidden;
+	opacity:1;
+}
+#slider ul {
+	position: absolute;
+	list-style: none;
+	left:0px;
+	top:0px;
+	padding:0 !important;
+	margin:0 !important;
+	width:300px;
+}
+#slider ul li {
+	position: relative;
+	display: block;
+	float: left;
+	background-color:transparent;
+}
+.slider-arrow {
+	position: absolute;
+	z-index:9999;
+	display:none;
+	width:auto;
+	height:auto;
+	opacity:1;
+	cursor:pointer;
+}
+.slider-arrow:hover {
+	opacity: .6;
+	-webkit-transition: all 0.2s ease;
+		-ms-transition: all 0.2s ease;
+			transition: all 0.2s ease;
+}
+.sa-left {
+	left:-3px;
+	top:104px;
+	width:23px;
+	height:26px;
+	opacity:0;
+}
+.sa-right {
+	right:3px;
+	top:104px;
+	width:22px;
+	height:26px;
+	opacity:0;
+}
+#slide1, #slide2, #slide3, #slide4{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:300px;
+	height:250px;
+	cursor:pointer;
+}
+#slide1 {
+	background: transparent url(slide1.png) no-repeat top left;
+}
+#slide2 {
+	background: transparent url(slide2.png) no-repeat top left;
+}
+#slide3 {
+  background: transparent url(slide3.png) no-repeat top left;
+}
+#slide4 {
+  background: transparent url(slide4.png) no-repeat top left;
+}
+
+
+#exit_btn, #clickArea {
+	position:absolute;
+	/*top:0px;*/
+	bottom:0px;
+	width:100%;
+	height:250px;
+	background-color:transparent;
+	cursor:pointer;
+	z-index:99999999999999999;
+	border:0;
+}
